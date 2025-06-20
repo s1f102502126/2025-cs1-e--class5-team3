@@ -3,8 +3,8 @@
     justify-content: space-around;
 }
 .item {
-    width: 160px;
-    height: 100;
+    width: 400px;
+    height: 70px;
     background-color: rgb(167, 167, 167);
-    
+    text-align: center;
 }
