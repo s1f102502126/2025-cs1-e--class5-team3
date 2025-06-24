@@ -1,10 +1,63 @@
+h1 {font-size: 60px;
+    font-family: fantasy;
+    border-bottom:5px double #000;
+}
+
+h1 img {width: 60px;
+}
+
+h1 span {
+    float: right;
+    ;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
 }
+
 .item {
-    width: 400px;
-    height: 70px;
-    background-color: rgb(167, 167, 167);
+    width: 415px;
+    height: 55px; 
+    background-color: rgb(60, 60, 60);
     text-align: center;
+    line-height:55px;
 }
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.slider-container {
+	position: relative; /* コンテナ内でスライド位置を相対的に設定 */
+	width: 100%; /* コンテナ幅を100%に */
+	height: 500px; /* コンテナの高さを固定 */
+	overflow: hidden; /* スライドがコンテナ外に出ないように非表示 */
+}
+
+.slideimg {
+	position: absolute; /* 位置を絶対指定で重ねて配置 */
+	inset: 0; /*親要素内にフルサイズで配置*/
+	opacity: 0; /* 初期状態で透明に */
+	background-size: cover; /* 画像をスライド全体にカバー */
+	animation: slideAnime 15s infinite; /* 1サイクル15秒を無限ループ */
+}
+
+.slideimg {
+	animation: slideAnime 9s infinite; /* 9秒で1サイクル */
+}
+
+/* スライド個別設定 */
+.slideimg:nth-of-type(1) { background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/da/Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_04_crop.jpg'); animation-delay: 0s; }
+.slideimg:nth-of-type(2) { background-image: url('https://www.reuters.com/resizer/v2/GLUYQF6TXJNSPMG2SITCMVGRTA.jpg?auth=ff24c40139fc16840badf3fe2ce8aa98ec4db4687df655bb0eabeb7d5a27d4d4&width=960&quality=80'); animation-delay: 3s; }
+.slideimg:nth-of-type(3) { background-image: url('https://toto.docomo.ne.jp/contents_lp/0021/img/im_kv.png'); animation-delay: 6s; }
+
+@keyframes slideAnime {
+	0%, 63%, 100% { opacity: 0; }/* スライドの非表示タイミング */
+	20%, 33% { opacity: 1; }/* スライドの表示タイミング */
+}
+
+/* 各スライドのアニメーションタイミングを均等にずらす */
+.slideimg:nth-of-type(1) {animation-delay: 0s;}
+.slideimg:nth-of-type(2) {animation-delay: 3s;}
+.slideimg:nth-of-type(3) {animation-delay: 6s;}
