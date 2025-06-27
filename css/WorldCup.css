@@ -1,3 +1,11 @@
+h1 {font-size: 60px;
+    font-family: fantasy;
+    border-bottom:5px double #000;
+}
+
+h1 img {width: 60px;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
