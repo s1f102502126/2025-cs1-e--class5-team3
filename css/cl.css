@@ -41,8 +41,8 @@ h3.mokuji1{
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 0px;
-    background-color: rgb(159, 237, 237);
-    border-bottom: solid 2px rgb(100, 100, 232);
+    background-color: rgb(159, 184, 237);
+    border-bottom: solid 3px rgb(100, 100, 232);
 }
 
 ul.mokuji2{
@@ -60,11 +60,11 @@ ul.mokuji2{
 
 h2.gaiyou{
     text-align: center;
-    border-bottom: solid 2px rgb(100, 100, 232);
+    border-bottom: solid 5px rgb(100, 100, 232);
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 25px;
-    background-color: rgb(159, 237, 237);
+    background-color: rgb(159, 184, 237);
 }
 
 .komidashi{
@@ -73,11 +73,11 @@ h2.gaiyou{
 
 h2.komidashi{
     text-align: center;
-    border-bottom: solid 2px rgb(100, 100, 232);
+    border-bottom: solid 5px rgb(100, 100, 232);
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 25px;
-    background-color: rgb(159, 237, 237);
+    background-color: rgb(159, 184, 237);
 }
 
 h3.komidashi{
