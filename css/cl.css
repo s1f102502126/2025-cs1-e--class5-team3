@@ -134,3 +134,20 @@ h3.komidashi{
 .red{
     color: red;
 }
+
+#top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 9px 11px 9px 11px;
+    border-radius: 16px;
+    font-size: 12px;
+    background-color: rgb(237, 237, 245);
+    font-weight: 1000;
+    border: solid 2px rgb(152, 152, 181);
+}
+
+#top a{
+    color: #000000;
+    text-decoration: none;
+}
